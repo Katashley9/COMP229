@@ -1,0 +1,81 @@
+<%- include ('partials/header.ejs') %>
+
+    <%- include ('partials/main_nav.ejs') %>
+
+
+
+
+        <main class="container">
+
+            <div class="jumbotron">
+
+                <h1 class="display-4">Welcome to <%= title %> page</h1>
+                <div class="contact-info">
+                    <p><strong>Name:</strong> Katialy Ashley Metsanou</p>
+                    <p><strong>Email:</strong> kmetsanou@gmail.com</p>
+                    <p><strong>Contact Number:</strong> (123) 456-7890</p>
+                    <p><strong>Location:</strong> Toronto, Canada</p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send me a message</h2>
+                    <form id="contactForm" onsubmit="return submitForm();">
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactNumber">Contact Number:</label>
+                            <input type="tel" id="contactNumber" name="contactNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!--bottom nav-->
+
+        <!--script section-->
+        <script>
+            // Function to handle form submission (for demonstration purposes)
+            function submitForm() {
+                // Retrieve form data
+                const formData = {
+                    firstName: document.getElementById("firstName").value,
+                    lastName: document.getElementById("lastName").value,
+                    contactNumber: document.getElementById("contactNumber").value,
+                    email: document.getElementById("email").value,
+                    message: document.getElementById("message").value,
+                };
+
+                // For demonstration, log the form data to the console
+                console.log("Form Data:", formData);
+
+                // You can redirect the user back to the Home Page here
+                // For example:
+                // window.location.href = "/home.html";
+
+                // Prevent the form from actually submitting
+                return false;
+            }
+        </script>
+
+        <%- include ('partials/bottom_nav.ejs') %>
+
+            <%- include ('partials/footer.ejs') %>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        <%= title %>
+    </title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css" />
+
+
+
+
+    <style>
+        h1 {
+            color: #a16161;
+        }
+
+        ul.navbar-nav {
+
+            list-style: none;
+            /* Remove the bullet */
+
+            display: inline;
+            /* Display the list items inline */
+
+            float: right;
+
+            font-size: 30px
+        }
+
+        ul.navbar-nav li {
+
+            display: inline-block;
+            /* Make the list items display inline */
+
+        }
+
+        a:link {
+
+            text-decoration: none;
+
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Profile image */
+        .about-section img {
+            width: 200%;
+            max-height: 400px;
+            /* Set the maximum width of the image */
+            margin-right: 10px;
+        }
+
+        /* About Me text */
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+
+
+
+        /* Optional: Add spacing around the gallery */
+        .jumbotron {
+            padding: 20px;
+        }
+
+
+
+
+
+
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 100px;
+            background-color: #eee8e9aa;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Add your custom styles here */
+
+        /* Navbar container */
+        /* Add your custom styles here */
+
+        /* Navbar container */
+        nav {
+            background-color: #625c5c;
+            /* Background color for the navbar */
+            color: #fff;
+            /* Text color */
+            padding: 10px 0;
+            /* Padding at the top and bottom */
+
+        }
+
+        /* Navbar list */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            /* Center the list items horizontally */
+        }
+
+        /* Navbar list items */
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Navbar links */
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            /* Link text color */
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+            /* Smooth color transition on hover */
+        }
+
+        /* Navbar link hover effect */
+        nav a:hover {
+            color: #f00;
+            /* Change link text color on hover */
+        }
+
+
+        nav img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        a:visited {
+
+            text-decoration: none;
+
+        }
+
+
+
+
+
+
+
+        a:hover {
+
+            text-decoration: none;
+
+        }
+
+
+
+
+
+
+
+        a:active {
+
+            text-decoration: none;
+
+        }
+
+
+
+
+        html,
+
+        body {
+
+            height: 100%;
+
+            margin: 0;
+
+        }
+
+
+
+
+        body {
+
+            display: flex;
+
+            flex-direction: column;
+
+            background-color: #333;
+
+        }
+
+
+
+
+        main {
+
+            flex: 1;
+
+        }
+
+
+
+
+
+
+
+        footer {
+
+            background-color: #343a40;
+
+            color: #ffffff;
+
+            padding: 20px;
+
+        }
+
+
+
+
+        footer .navbar-text {
+
+            margin-bottom: 0;
+
+        }
+
+        /* Form styles */
+        .contact-form {
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: -80px;
+            margin-left: -80px;
+        }
+
+        .contact-form h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 90%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            /* Allow vertical resizing of textarea */
+        }
+
+        button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive styles (adjust for smaller screens) */
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
