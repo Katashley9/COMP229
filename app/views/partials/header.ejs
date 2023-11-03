@@ -1,3 +1,10 @@
+<!--/* File: header.ejs
+Student's Name: Katialy Ashley
+Student ID: 301273661
+Date: 03/10/2023
+
+Description: This file styles the multiple features of the web page.
+*/-->
 <!DOCTYPE html>
 
 <html lang="en">
@@ -14,45 +21,60 @@
         <%= title %>
     </title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
 
     <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css" />
 
-
-
-
     <style>
         h1 {
-            color: #a16161;
+            color: #f7dbbe;
         }
 
-        ul.navbar-nav {
-
-            list-style: none;
-            /* Remove the bullet */
-
-            display: inline;
-            /* Display the list items inline */
-
-            float: right;
-
-            font-size: 30px
+        h2.index {
+            color: #a8a8a8;
         }
 
-        ul.navbar-nav li {
-
-            display: inline-block;
-            /* Make the list items display inline */
-
+        h2 {
+            color: #10100f;
         }
 
-        a:link {
+        h3 {
+            color: #ffebb4;
+        }
 
+        ul {
+            list-style-type: none;
+            margin-right: 0;
+            padding: 5px;
+            overflow: hidden;
+            background-color: #ffedd9;
+            text-align: center;
+        }
+
+        li {
+            float: left;
+            margin-left: 15px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
-
         }
+
+        .list-unstyled {
+            background-color: #ffffff;
+        }
+
+        li a:hover {
+            background-color: #ffff;
+        }
+
+
 
         .about-section {
             display: flex;
@@ -65,33 +87,41 @@
             width: 200%;
             max-height: 400px;
             /* Set the maximum width of the image */
-            margin-right: 10px;
+            margin-right: -100px;
         }
 
         /* About Me text */
         .about-section p {
             font-size: 16px;
-            line-height: 1.5;
+            line-height: 2;
+            margin-left: -90px;
         }
 
-        div.gallery {
+        div.gallery-item {
             margin: 5px;
-            border: 1px solid #ccc;
+            border-radius: 10px;
             float: left;
             width: 180px;
         }
 
-        div.gallery:hover {
+        div.gallery-item:hover {
             border: 1px solid #777;
         }
 
-        div.gallery img {
+        div.gallery-item img {
             width: 100%;
-            height: auto;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         div.desc {
-            padding: 15px;
+            padding: 0px;
             text-align: center;
         }
 
@@ -100,21 +130,48 @@
 
         /* Optional: Add spacing around the gallery */
         .jumbotron {
-            padding: 20px;
+            padding: 90px;
         }
 
 
 
 
+        .resume-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #b1d3f7;
+            /* Change the color to your preference */
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+        }
 
+        h4.project {
+            text-align: center;
+            color: #DBB3BD;
+        }
 
+        .resume-button:hover {
+            background-color: #0056b3;
+            /* Change the color on hover */
+        }
+
+        .required {
+            color: red;
+            /* Set the color to red */
+            margin-left: 3px;
+            /* Adjust the spacing from the label text */
+        }
 
         .wrapper {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 100px;
-            background-color: #eee8e9aa;
+            background-color: #ffffff6c;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            color: #626263;
+            text-align: center;
         }
 
         /* Add your custom styles here */
@@ -124,11 +181,13 @@
 
         /* Navbar container */
         nav {
-            background-color: #625c5c;
+            background-color: #ffedd9;
             /* Background color for the navbar */
             color: #fff;
             /* Text color */
-            padding: 10px 0;
+            padding: 5px 10px;
+            margin-left: 0;
+            margin-right: 0;
             /* Padding at the top and bottom */
 
         }
@@ -150,17 +209,17 @@
         /* Navbar links */
         nav a {
             text-decoration: none;
-            color: #fff;
+            color: #776f6f;
             /* Link text color */
             font-weight: bold;
-            font-size: 16px;
+            font-size: 20px;
             transition: color 0.3s;
             /* Smooth color transition on hover */
         }
 
         /* Navbar link hover effect */
         nav a:hover {
-            color: #f00;
+            color: rgb(219, 149, 149);
             /* Change link text color on hover */
         }
 
@@ -170,6 +229,8 @@
             margin-left: auto;
             margin-right: auto;
             width: 20%;
+            height: 100%;
+
         }
 
 
@@ -234,7 +295,7 @@
 
             flex-direction: column;
 
-            background-color: #333;
+            background-color: #fffcfc;
 
         }
 
@@ -244,10 +305,18 @@
         main {
 
             flex: 1;
-
+            font-size: 120%;
+            line-height: 200%;
         }
 
+        p {
+            line-height: 200%;
+        }
 
+        .container-fluid img {
+            border-radius: 50%;
+            size: 300%;
+        }
 
 
 
@@ -255,22 +324,15 @@
 
         footer {
 
-            background-color: #343a40;
+            background-color: #ffedd9;
 
-            color: #ffffff;
+            color: #c2bebeee;
 
-            padding: 20px;
-
-        }
-
-
-
-
-        footer .navbar-text {
-
-            margin-bottom: 0;
+            padding: 40px;
 
         }
+
+
 
         /* Form styles */
         .contact-form {
@@ -335,8 +397,57 @@
                 padding: 10px;
             }
         }
-    </style>
 
+        * {
+            box-sizing: border-box
+        }
+
+        .mySlides1,
+        .mySlides2 {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a grey background color */
+        .prev:hover,
+        .next:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>

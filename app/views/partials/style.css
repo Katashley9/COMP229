@@ -1,0 +1,362 @@
+  h1 {
+      color: #f7dbbe;
+  }
+
+  h2.index {
+      color: #a8a8a8;
+  }
+
+  h2 {
+      color: #10100f;
+  }
+
+  h3 {
+      color: #ffebb4;
+  }
+
+  ul {
+      list-style-type: none;
+      margin-right: 0;
+      padding: 5px;
+      overflow: hidden;
+      background-color: #ffedd9;
+      text-align: center;
+  }
+
+  li {
+      float: left;
+      margin-left: 15px;
+  }
+
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  .list-unstyled {
+      background-color: #ffffff;
+  }
+
+  li a:hover {
+      background-color: #ffff;
+  }
+
+
+
+  .about-section {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+  }
+
+  /* Profile image */
+  .about-section img {
+      width: 200%;
+      max-height: 400px;
+      /* Set the maximum width of the image */
+      margin-right: -100px;
+  }
+
+  /* About Me text */
+  .about-section p {
+      font-size: 16px;
+      line-height: 2;
+      margin-left: -90px;
+  }
+
+  div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+  }
+
+  div.gallery:hover {
+      border: 1px solid #777;
+  }
+
+  div.gallery img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.desc {
+      padding: 0px;
+      text-align: center;
+  }
+
+
+
+
+  /* Optional: Add spacing around the gallery */
+  .jumbotron {
+      padding: 90px;
+  }
+
+
+
+
+  .resume-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #b1d3f7;
+      /* Change the color to your preference */
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+  }
+
+  h4.project {
+      text-align: center;
+      color: #DBB3BD;
+  }
+
+  .resume-button:hover {
+      background-color: #0056b3;
+      /* Change the color on hover */
+  }
+
+  .required {
+      color: red;
+      /* Set the color to red */
+      margin-left: 3px;
+      /* Adjust the spacing from the label text */
+  }
+
+  .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 100px;
+      background-color: #ffffff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      color: #626263;
+      text-align: center;
+  }
+
+  /* Add your custom styles here */
+
+  /* Navbar container */
+  /* Add your custom styles here */
+
+  /* Navbar container */
+  nav {
+      background-color: #ffedd9;
+      /* Background color for the navbar */
+      color: #fff;
+      /* Text color */
+      padding: 5px 10px;
+      margin-left: 0;
+      margin-right: 0;
+      /* Padding at the top and bottom */
+
+  }
+
+  /* Navbar list */
+  nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      /* Center the list items horizontally */
+  }
+
+  /* Navbar list items */
+  nav li {
+      display: inline;
+      margin-right: 20px;
+  }
+
+  /* Navbar links */
+  nav a {
+      text-decoration: none;
+      color: #776f6f;
+      /* Link text color */
+      font-weight: bold;
+      font-size: 20px;
+      transition: color 0.3s;
+      /* Smooth color transition on hover */
+  }
+
+  /* Navbar link hover effect */
+  nav a:hover {
+      color: rgb(219, 149, 149);
+      /* Change link text color on hover */
+  }
+
+
+  nav img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 20%;
+      height: 100%;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  a:visited {
+
+      text-decoration: none;
+
+  }
+
+
+
+
+
+
+
+  a:hover {
+
+      text-decoration: none;
+
+  }
+
+
+
+
+
+
+
+  a:active {
+
+      text-decoration: none;
+
+  }
+
+
+
+
+  html,
+
+  body {
+
+      height: 100%;
+
+      margin: 0;
+
+  }
+
+
+
+
+  body {
+
+      display: flex;
+
+      flex-direction: column;
+
+      background-color: #fbf8fb;
+
+  }
+
+
+
+
+  main {
+
+      flex: 1;
+      font-size: 120%;
+      line-height: 200%;
+  }
+
+  p {
+      line-height: 200%;
+  }
+
+  .container-fluid img {
+      border-radius: 50%;
+      size: 300%;
+  }
+
+
+
+
+
+  footer {
+
+      background-color: #343a40;
+
+      color: #ffffff;
+
+      padding: 10px;
+
+  }
+
+
+
+  /* Form styles */
+  .contact-form {
+      background-color: #fff;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-right: -80px;
+      margin-left: -80px;
+  }
+
+  .contact-form h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+  }
+
+  .form-group {
+      margin-bottom: 20px;
+  }
+
+  label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+      width: 90%;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+  }
+
+  textarea {
+      resize: vertical;
+      /* Allow vertical resizing of textarea */
+  }
+
+  button[type="submit"] {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+      background-color: #0056b3;
+  }
+
+  /* Responsive styles (adjust for smaller screens) */
+  @media (max-width: 768px) {
+      .contact-form {
+          padding: 10px;
+      }
+  }

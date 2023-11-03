@@ -1,3 +1,10 @@
+<!--/* File: services.ejs
+Student's Name: Katialy Ashley
+Student ID: 301273661
+Date: 03/10/2023
+
+Description: Thisfile controls the services web page.
+*/-->
 <%- include ('partials/header.ejs') %>
 
     <%- include ('partials/main_nav.ejs') %>
@@ -6,14 +13,46 @@
 
 
         <main class="container">
+            <h1 class="display-4"> My Services</h1>
+            <p>At 'My Services,' I am committed to delivering top-notch solutions tailored to your specific needs. With
+                a background in
+                Software Engineering Technology and a passion for AI, I offer a range of services that encompass the
+                dynamic world of
+                technology. Whether you're looking for AI-driven software solutions, web development expertise, or
+                innovative digital
+                products, I bring a blend of creativity, technical excellence, and a commitment to staying at the
+                forefront of emerging
+                technologies.</p>
+            <br>
+            <div class="gallery">
 
-            <div class="jumbotron">
-
-                <h1 class="display-4">Welcome to <%= title %> page</h1>
-
-                <p>I am eating</p>
+                <div class="gallery-item">
+                    <img src="/img/sfw.png" alt="Image 5">
+                    <div class="desc">General <br>Programming</div>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="gallery-item">
+                    <img src="/img/Dtb.png" alt="Image 1">
+                    <div class="desc">Database (Nosql, My sql)</div>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="gallery-item">
+                    <img src="/img/mobile-app.png" alt="Image 2">
+                    <div class="desc">Mobile appp development</div>
+                </div>
+                <br><br>
+                <div class="gallery-item">
+                    <img src="/img/web.avif" alt="Image 3">
+                    <div class="desc">Software <br>Development</div>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="gallery-item">
+                    <img src="/img/software.jpg" alt="Image 2">
+                    <div class="desc">Web application development</div>
+                </div>
 
             </div>
+            <br><br><br><br>
 
         </main>
 
