@@ -1,0 +1,116 @@
+/*  JavaScript 7th Edition
+    Chapter 5
+    Chapter Case
+
+    Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 1000px;
+   background-color:#fa817f;
+	color:#873d1e;
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+ol, ul {
+   list-style: none;
+}
+
+/* article styles */
+
+article {
+   width: 100%;
+   height: 800px;
+   margin: 0 auto;
+}
+
+article > h1 {
+   font-size: 3.8em;
+   text-align: center;
+   color:#ffbf00;
+   text-shadow: 2px 1px 0px rgb(107, 5, 77);
+   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+   margin: 5px 0 20px 0;
+}
+/*style for h2 element*/
+article > h2 {
+   font-size: 3.5em;
+   text-align: center;
+   color:#4fb06d;
+   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+   margin: 5px 0 20px 0;
+}
+
+article > p {
+   font-size: 1.5em;
+   line-height: 2;
+}
+
+.favorites-container img {
+  width: 600px; /* Adjust the width as needed */
+  height: 500px; /* Adjust the height as needed */
+  object-fit: cover; /* Adjust the object-fit property as needed */
+}
+
+article > ul {
+   list-style-type: disc;
+   font-size: 1.2em;
+   line-height: 2;
+   padding-left: 20px;
+   padding-bottom: 40px;
+   border-bottom: 3px solid gray;
+}
+.wrapper{
+  min-width: 960px;
+  max-width: 2048px; 
+   width:40%;
+    margin: 0 auto;
+    padding: 60px;
+  background-color:white;
+ box-shadow: 3px 3px 3px white;}
+
+footer {
+   text-align: center;
+font-size:95%;
+padding:20px;
+background-color:brown;
+    color:white;
+}
+

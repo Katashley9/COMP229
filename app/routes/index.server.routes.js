@@ -1,3 +1,9 @@
+/*File: index.server.routes.js
+Student's Name: Katialy Ashley
+Student ID: 301273661
+Date: 03/10/2023
+
+*/
 var express = require('express');
 
 var router = express.Router();
@@ -20,9 +26,9 @@ router.get('/about', function (req, res, next) {
 
 });
 
-router.get('/products', function (req, res, next) {
+router.get('/projects', function (req, res, next) {
 
-    res.render('products', { title: 'Products' });
+    res.render('projects', { title: 'Projects' });
 
 });
 
